@@ -1,7 +1,8 @@
 function countMultiples(arr) {
-  const result = {};
+  const result = {}; // Object to store counts for each i (1–9)
   for (let i = 1; i <= 9; i++) {
     result[i] = arr.filter((num) => num % i === 0).length;
+    // Filters numbers divisible by i, counts them
   }
   return result;
 }
